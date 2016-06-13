@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Places I've Been</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="page-header text-center">
+      <h1>Places I've Been</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form class="form-group">
+            <div class="row">
+              <label>Place Name:</label>
+              <input type="text" id="name" class="form-control">
+              <label>Year Visited:</label>
+              <input type="number" id="year" class="form-control">
+            </div>
+            <div class="row">
+              <label>Notes:</label>
+              <textarea type="text" id="notes" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-warning pull-right" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-2">
+          <ul id="locations">
+
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul id="locations2">
+
+          </ul>
+        </div>
+        <div class="col-md-1">
+          <ul id="locations3">
+
+          </ul>
+        </div>
+      </div>
+      <div class="row" id="bottom">
+        <div class="col-md-offset-4 col-md-4">
+          <div id="display">
+            <div class="row">
+              <label id="display-name" class="inline pull-left"></label><button type="button" id="edit-name" class="btn btn-default btn-xs inline"><span class="glyphicon glyphicon-pencil"></span></button>
+              <input type="text" id="edited-name" class="form-control">
+            </div>
+
+            <div class="row">
+              <label class="inline pull-left">Year Visited:&nbsp;</label>
+              <p id="display-year" class="inline pull-left"></p><button type="button" id="edit-year" class="btn btn-default btn-xs inline pull-left"><span class="glyphicon glyphicon-pencil"></span></button>
+              <input type="text" id="edited-year" class="form-control">
+            </div>
+
+            <div class="row">
+              <label class="inline pull-left">Notes:&nbsp;</label>
+              <p id="display-notes"></p><button type="button" id="edit-notes" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+              <textarea type="text" id="edited-notes" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
